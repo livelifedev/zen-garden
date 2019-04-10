@@ -1,0 +1,1 @@
+This was an afternoon challenge for class, using the Zen Garden HTML document and styling it with CSS without modifying the HTML.

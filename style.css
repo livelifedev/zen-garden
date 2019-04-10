@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Voltaire', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  letter-spacing: 1px;
+  color: #7f8c8d;
+  background-color: #2f3640;
+}
+
+a {
+  color: #ced6e0;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #dcdde1;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px;
+}
+
+.main .requirements h3 {
+  text-align: center;
+  background-color: unset;
+}
+
+header {
+  height: 100vh;
+/*  background: url("zen-bg.jpg") no-repeat center;*/
+  background: url("butterfly.jpeg") no-repeat center;
+  background-size: cover;
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+  margin-bottom: 80px;
+}
+
+header h1 {
+  position: absolute;
+  top: 21.5%;
+  text-align: right;
+  right: 0;
+  font-size: 4em;
+  letter-spacing: 4px;
+  color: #f1f2f6;
+  padding-right: 31px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2px 0  0 2px;
+}
+
+header h2 {
+  position: absolute;
+  top: 21.5%;
+  right: 0;
+  margin-top: 120px;
+  padding-right: 76px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #16a085;
+  border-radius: 2px 0  0 2px;
+}
+
+.summary {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  font-size: 0.9em;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-right: 10px;
+  border-radius: 0 2px 2px 0;
+  font-style: italic;
+}
+
+.summary p {
+  margin-left: 15px;
+  text-align: justify;
+
+}
+
+.preamble {
+  text-align: justify;
+  margin-bottom: 85px;
+  padding: 0 40px 0 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .explanation {
+  width: 80%;
+  align-self: flex-end;
+  text-align: right;
+/*  background: url("tree.png") no-repeat right;*/
+/*  background-size: 60%;*/
+  padding-right: 8px;
+  margin-bottom: 40px;
+}
+
+.main .participation {
+  width: 90%;
+  align-self: flex-start;
+  padding-left: 8px;
+  margin-bottom: 80px;
+}
+
+.main .benefits {
+  width: 65%;
+  align-self: flex-end;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.main .requirements {
+  width: 100%;
+  align-self: center;
+  text-align: justify;
+  margin-top: 80px;
+  border-radius: 2px;
+  padding: 80px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main .requirements h3 {
+  text-align: center;
+  background-color: none;
+}
+.main .requirements p {
+  padding: 0 40px;
+}
+
+footer {
+  margin: 40px 0 30px;
+  align-self: center;
+}
+
+footer a {
+  color: #16a085;
+}
+
+.wrapper {
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sidebar ul {
+  padding: 0 0 0 10px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+
+.sidebar {
+  background-color: rgba(44,62,80, 0.9);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 30%;
+}
+
+
+.design-selection {
+  width: 72%;
+}
+
+.design-selection ul {
+  margin: 0;
+}
+
+.design-selection .select {
+  display: none;
+}
+
+.design-selection li {
+  font-size: 0.9em;
+  padding: 8px 0 16px 20px;
+  border-top: 1px #34495e solid;
+}
+
+.design-selection .design-name {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.design-selection .designer-name {
+  font-style: italic;
+}
+
+.design-archives {
+  order: -1;
+}
+
+.design-archives ul {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 60px 0 2px;
+}
+
+.design-archives .archives {
+  display: none;
+}
+
+.design-archives .next {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-left: 8px;
+}
+
+.design-archives .viewall {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin: 0 0 20px;
+}
+
+.zen-resources .resources {
+  margin: 40px 0 5px 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  display: none;
+}
+
+.zen-resources ul {
+  padding: 15px 0 0 15px;
+  margin: 0;
+  font-size: 1em;
+  display: flex;
+  bottom: 0;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 2px 2px 0;
+}
+
+.zen-resources ul li {
+  margin-right: 10px;
+}
+
+.zen-resources a {
+  color: #16a085;
+  text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  
+  header {
+    height: 100vh;
+  }
+  
+  #design-selection {
+    display: none;
+  }
+  
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 80px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .design-archives ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 25px 0 2px;
+    padding: 0;
+  }
+  
+  .design-archives .next {
+    display: none;
+  }
+  
+  .design-archives .viewall {
+    font-size: 1.8em;
+    margin: 0 0 20px;
+    align-self: center;
+  }
+  
+  header h1 {
+    position: absolute;
+    top: 21.5%;
+    text-align: right;
+    right: 0;
+    font-size: 3em;
+    padding-right: 31px;
+    padding-left: 10px;
+  }
+
+  header h2 {
+    margin-top: 90px;
+    font-size: 1.4em;
+  }
+  
+  .summary {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 0 10px;
+    border-radius: 0 2px 2px 0;
+    font-style: italic;
+  }
+
+  .summary p {
+    margin-left: 0px;
+  }
+
+  #zen-resources ul {
+    padding: 15px 0 0 15px;
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    left: 0%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 2px 2px 0;
+    flex-wrap: wrap;
+  }
+
+  .zen-resources ul li {
+    margin-right: 10px;
+  }
+} 
+
+
+@media only screen and (min-width: 1600px) {
+  html, body {
+    font-size: 24px;
+  }
+
+  .zen-resources ul {
+    padding: 30px 0 0 15px;
+    margin: 0;
+    font-size: 1em;
+    display: flex;
+    bottom: 0;
+    width: 800px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 2px 2px 0;
+  }
+
+  header h2 {
+    position: absolute;
+    top: 21.5%;
+    right: 0;
+    margin-top: 205px;
+    padding-right: 76px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #16a085;
+    border-radius: 2px 0  0 2px;
+  }
+}
+
+
